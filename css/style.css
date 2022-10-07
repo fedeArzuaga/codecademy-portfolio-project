@@ -9,3 +9,12 @@ html {
     background-color: var(--bg-color);
     color: var(--white-color);
 }
+
+/* Custom grid system to organize all content inside the main tag */
+.tm-width-100 {
+    width: 100%;
+}
+
+.tm-width-50 {
+    width: 50%;
+}
