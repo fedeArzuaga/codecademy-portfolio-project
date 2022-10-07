@@ -4,10 +4,16 @@
 
 html {
     font-family: var(--noto-sans);
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.6;
     background-color: var(--bg-color);
-    color: var(--white-color);
+    color: var(--white-color);   
+}
+
+@media screen and (min-width: var(--bk-medium)) {
+    html {
+        font-size: 20px;
+    }
 }
 
 /* Custom grid system to organize all content inside the main tag */
@@ -17,4 +23,40 @@ html {
 
 .tm-width-50 {
     width: 50%;
+}
+
+@media screen and (min-width: var(--bk-small)) {
+    .tm-width-100-s {
+        width: 100%;
+    }
+    .tm-width-50-s {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: var(--bk-medium)) {
+    .tm-width-100-m {
+        width: 100%;
+    }
+    .tm-width-50-m {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: var(--bk-large)) {
+    .tm-width-100-l {
+        width: 100%;
+    }
+    .tm-width-50-l {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: var(--bk-xlarge)) {
+    .tm-width-100-xl {
+        width: 100%;
+    }
+    .tm-width-50-xl {
+        width: 50%;
+    }
 }
