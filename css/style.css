@@ -2,6 +2,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400&display=swap"); /* 'Noto Sans Mono', monospace; */
 /* General styling */
 /* Breakpoints references */
+.tm-flex {
+  display: flex;
+}
+
+.tm-flex-column {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.tm-flex-middle {
+  align-items: center;
+}
+
+.tm-flex-center {
+  justify-content: center;
+}
+
+.tm-flex-between {
+  justify-content: space-between;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,6 +32,10 @@ html {
   font-size: 16px;
   line-height: 1.6;
   background-color: #323949;
+  color: #fff;
+}
+
+a {
   color: #fff;
 }
 
@@ -67,6 +92,34 @@ html {
   padding-left: 2rem;
   padding-right: 2rem;
   margin: 0 auto;
+}
+
+.tm-inline-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.tm-inline-list > li {
+  display: inline-block;
+}
+
+/* Header styles */
+header {
+  padding: 1rem 0;
+}
+
+.tm-main-menu > ul > li > a {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+/* Footer styles */
+footer {
+  padding: 1rem 0;
+}
+
+.tm-heart {
+  color: #f00;
 }
 
 /*# sourceMappingURL=style.css.map */
