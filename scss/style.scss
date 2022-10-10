@@ -1,5 +1,8 @@
 @import "./variables.scss";
 @import "./flex-system.scss";
+@import "./columns.scss";
+@import "./generics.scss";
+@import "./button.scss";
 
 * {
     box-sizing: border-box;
@@ -13,6 +16,13 @@ html {
     color: $white-color;   
 }
 
+body {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
 a {
     color: $white-color;
 }
@@ -21,71 +31,6 @@ a {
     html {
         font-size: 20px;
     }
-}
-
-/* Custom grid system to organize all content inside the main tag */
-.tm-width-100 {
-    width: 100%;
-}
-
-.tm-width-50 {
-    width: 50%;
-}
-
-@media screen and (min-width: $bk-small) {
-    .tm-width-100-s {
-        width: 100%;
-    }
-    .tm-width-50-s {
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: $bk-medium) {
-    .tm-width-100-m {
-        width: 100%;
-    }
-    .tm-width-50-m {
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: $bk-large) {
-    .tm-width-100-l {
-        width: 100%;
-    }
-    .tm-width-50-l {
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: $bk-xlarge) {
-    .tm-width-100-xl {
-        width: 100%;
-    }
-    .tm-width-50-xl {
-        width: 50%;
-    }
-}
-
-/* Generic rules */
-.tm-container {
-    width: 100%;
-    max-width: 1280px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin: 0 auto;
-}
-
-.tm-inline-list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-
-    & > li {
-        display: inline-block;
-    }
-
 }
 
 /* Header styles */
@@ -98,7 +43,26 @@ header {
         & > a {
             display: inline-block;
             padding: 0 15px;
+            
+            &, &:hover {
+                text-decoration: none;
+            }
+
         }
+    }
+}
+
+/* Homepage style */
+.tm-page-section#home {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.tm-buttons-container {
+    & > a + a {
+        margin-left: 2rem;
     }
 }
 

@@ -23,27 +23,6 @@
   justify-content: space-between;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  background-color: #323949;
-  color: #fff;
-}
-
-a {
-  color: #fff;
-}
-
-@media screen and (min-width: 768px) {
-  html {
-    font-size: 20px;
-  }
-}
 /* Custom grid system to organize all content inside the main tag */
 .tm-width-100 {
   width: 100%;
@@ -103,6 +82,57 @@ a {
   display: inline-block;
 }
 
+h1 {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-family: "Noto Sans Mono", monospace;
+  line-height: 1.2;
+  font-size: 2.4rem;
+}
+
+.tm-button {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border: 2px solid #fff;
+  font-family: "Noto Sans Mono", monospace;
+  font-weight: 700;
+}
+.tm-button, .tm-button:hover {
+  text-decoration: none;
+}
+.tm-button:hover {
+  color: #323949;
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #323949;
+  color: #fff;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+a {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+}
 /* Header styles */
 header {
   padding: 1rem 0;
@@ -111,6 +141,21 @@ header {
 .tm-main-menu > ul > li > a {
   display: inline-block;
   padding: 0 15px;
+}
+.tm-main-menu > ul > li > a, .tm-main-menu > ul > li > a:hover {
+  text-decoration: none;
+}
+
+/* Homepage style */
+.tm-page-section#home {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.tm-buttons-container > a + a {
+  margin-left: 2rem;
 }
 
 /* Footer styles */

@@ -1,0 +1,27 @@
+/* Generic rules */
+.tm-container {
+    width: 100%;
+    max-width: 1280px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0 auto;
+}
+
+.tm-inline-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+
+    & > li {
+        display: inline-block;
+    }
+
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-family: $noto-sans-mono;
+    line-height: 1.2;
+    font-size: 2.4rem;
+}
