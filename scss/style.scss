@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap'); /* 'Noto Sans', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400&display=swap'); /* 'Noto Sans Mono', monospace; */
-@import url("variables.scss");
+@import "./variables.scss";
 
 html {
-    font-family: var(--noto-sans);
+    font-family: $noto-sans;
     font-size: 16px;
     line-height: 1.6;
-    background-color: var(--bg-color);
-    color: var(--white-color);   
+    background-color: $bg-color;
+    color: $white-color;   
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $bk-medium) {
     html {
         font-size: 20px;
     }
@@ -25,7 +23,7 @@ html {
     width: 50%;
 }
 
-@media screen and (min-width: var(--bk-small)) {
+@media screen and (min-width: $bk-small) {
     .tm-width-100-s {
         width: 100%;
     }
@@ -34,7 +32,7 @@ html {
     }
 }
 
-@media screen and (min-width: var(--bk-medium)) {
+@media screen and (min-width: $bk-medium) {
     .tm-width-100-m {
         width: 100%;
     }
@@ -43,7 +41,7 @@ html {
     }
 }
 
-@media screen and (min-width: var(--bk-large)) {
+@media screen and (min-width: $bk-large) {
     .tm-width-100-l {
         width: 100%;
     }
@@ -52,7 +50,7 @@ html {
     }
 }
 
-@media screen and (min-width: var(--bk-xlarge)) {
+@media screen and (min-width: $bk-xlarge) {
     .tm-width-100-xl {
         width: 100%;
     }

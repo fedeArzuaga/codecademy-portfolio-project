@@ -1,15 +1,17 @@
-:root {
-    /* General styling */
-    --bg-color: #323949;
-    --bg-lighter-color: #4C5265;
-    --white-color: #fff;
-    --noto-sans: 'Noto Sans', sans-serif;
-    --noto-sans-mono: 'Noto Sans Mono', monospace;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap'); /* 'Noto Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400&display=swap'); /* 'Noto Sans Mono', monospace; */
 
-    /* Breakpoints references */
-    --bk-xsmall: 360px;
-    --bk-small: 480px;
-    --bk-medium: 768px;
-    --bk-large: 1200px;
-    --bk-xlarge: 1600px;
-}
+ 
+ /* General styling */
+ $bg-color: #323949;
+ $bg-lighter-color: #4C5265;
+ $white-color: #fff;
+ $noto-sans: 'Noto Sans', sans-serif;
+ $noto-sans-mono: 'Noto Sans Mono', monospace;
+
+ /* Breakpoints references */
+ $bk-xsmall: 360px;
+ $bk-small: 480px;
+ $bk-medium: 768px;
+ $bk-large: 1200px;
+ $bk-xlarge: 1600px;
