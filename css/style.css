@@ -158,6 +158,25 @@ header {
   margin-left: 2rem;
 }
 
+/* About me style */
+.tm-page-section#about-me .tm-image-container {
+  position: relative;
+}
+.tm-page-section#about-me .tm-image-container:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: 15px;
+  bottom: 22px;
+  background-color: #4C5265;
+}
+.tm-page-section#about-me img[src="./../img/profile.jpg"] {
+  max-width: 400px;
+  position: relative;
+}
+
 /* Footer styles */
 footer {
   padding: 1rem 0;

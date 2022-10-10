@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codecademy Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./../css/style.css">
 </head>
 <body>
     
@@ -22,22 +22,22 @@
                     <nav class="tm-main-menu">
                         <ul class="tm-inline-list">
                             <li>
-                                <a href="#" data-section="home">
+                                <a href="./../" data-section="home">
                                     Home
                                 </a>
                             </li>
                             <li>
-                                <a href="./about-me/" data-section="about-me">
+                                <a href="#" data-section="about-me">
                                     About me
                                 </a>
                             </li>
                             <li>
-                                <a href="./career/" data-section="career">
+                                <a href="./../career/" data-section="career">
                                     Career
                                 </a>
                             </li>
                             <li>
-                                <a href="./contact/" data-section="contact">
+                                <a href="./../contact/" data-section="contact">
                                     Contact
                                 </a>
                             </li>
@@ -51,21 +51,16 @@
     <main id="main-content">
         <div class="tm-container">
 
-            <section class="tm-page-section" id="home">
-                <div class="tm-flex tm-flex-column tm-flex-center tm-flex-middle">
+            <section class="tm-page-section" id="about-me">
+                <div class="tm-flex tm-flex-between tm-flex-middle">
                     <div>
-                        <h1>Future should be coded</h1>
-                        <p>
-                            Welcome to my portfolio web project. Here you will find some information about me, what I've been doing until now, my professional career, what are my goals and more. Enjoy the trip!
+                        <h1>About me</h1>
+                        <p class="tm-width-50">
+                            I'm a Web UI Developer based in Montevideo, Uruguay with more than 3 years of experience working with web techonolgies. I'm specialized on working with the following stack: HTML, SCSS, CSS, JS, and others. Feeling curious? Get in touch!
                         </p>
-                        <div class="tm-flex tm-flex-center tm-flex-middle tm-buttons-container">
-                            <a href="#" class="tm-button">
-                                Career
-                            </a>
-                            <a href="#" class="tm-button">
-                                Contact
-                            </a>
-                        </div>
+                    </div>
+                    <div class="tm-image-container">
+                        <img src="./../img/profile.jpg" alt="Federico Arzuaga (Profile picture)">
                     </div>
                 </div>
             </section>
@@ -86,7 +81,7 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="./js/scripts.js"></script>
+    <script type="text/javascript" src="./../js/scripts.js"></script>
 
 </body>
 </html>

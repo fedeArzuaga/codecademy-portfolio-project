@@ -66,6 +66,31 @@ header {
     }
 }
 
+/* About me style */
+.tm-page-section#about-me {
+
+    .tm-image-container {
+        position: relative;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            right: calc(0px + 15px);
+            bottom: calc(0px + 22px);
+            background-color: $bg-lighter-color;
+        }
+    }
+
+    img[src="./../img/profile.jpg"] {
+        max-width: 400px;
+        position: relative;
+    }
+
+}
+
 /* Footer styles */
 footer {
     padding: 1rem 0;
