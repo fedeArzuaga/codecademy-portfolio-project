@@ -1,5 +1,9 @@
 @import "./variables.scss";
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: $noto-sans;
     font-size: 16px;
@@ -57,4 +61,13 @@ html {
     .tm-width-50-xl {
         width: 50%;
     }
+}
+
+/* Generic rules */
+.tm-container {
+    width: 100%;
+    max-width: 1280px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0 auto;
 }
