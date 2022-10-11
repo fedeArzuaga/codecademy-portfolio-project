@@ -223,6 +223,67 @@ header {
     }
 }
 
+/* Contact page */
+.tm-page-section#contact {
+
+    & > .tm-flex > div {
+        @media screen and (min-width: $bk-medium) {
+            width: 50%;
+        }
+    }
+
+    .tm-social-media {
+        margin-top: 2rem;
+        padding: 2rem;
+        background-color: $bg-lighter-color;
+
+        @media screen and (min-width: $bk-medium) {
+            margin-top: 0;
+            margin-left: 2rem;
+        }
+
+        @media screen and (min-width: $bk-xlarge) {
+            width: 600px;
+        }
+
+        ul {
+            text-align: center;
+            padding: 0;
+            list-style: none;
+
+            & > li {
+                margin-top: 1rem;
+
+                @media screen and (min-width: $bk-medium) {
+                    display: inline-block;
+                }
+
+                & > a {
+                    display: block;
+                }
+
+            }
+
+            & > li + li {
+                margin-top: 1rem;
+
+                @media screen and (min-width: $bk-medium) {
+                    margin-top: 0;
+                    margin-left: 1rem;
+                }
+
+            }
+
+        }
+
+        svg {
+            width: 40px;
+        }
+
+    }
+
+}
+
 /* Footer styles */
 footer {
     padding: 1rem 0;

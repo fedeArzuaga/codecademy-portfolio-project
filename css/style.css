@@ -547,6 +547,57 @@ header {
   font-size: 0.8rem;
 }
 
+/* Contact page */
+@media screen and (min-width: 768px) {
+  .tm-page-section#contact > .tm-flex > div {
+    width: 50%;
+  }
+}
+.tm-page-section#contact .tm-social-media {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #4C5265;
+}
+@media screen and (min-width: 768px) {
+  .tm-page-section#contact .tm-social-media {
+    margin-top: 0;
+    margin-left: 2rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .tm-page-section#contact .tm-social-media {
+    width: 600px;
+  }
+}
+.tm-page-section#contact .tm-social-media ul {
+  text-align: center;
+  padding: 0;
+  list-style: none;
+}
+.tm-page-section#contact .tm-social-media ul > li {
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .tm-page-section#contact .tm-social-media ul > li {
+    display: inline-block;
+  }
+}
+.tm-page-section#contact .tm-social-media ul > li > a {
+  display: block;
+}
+.tm-page-section#contact .tm-social-media ul > li + li {
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .tm-page-section#contact .tm-social-media ul > li + li {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+}
+.tm-page-section#contact .tm-social-media svg {
+  width: 40px;
+}
+
 /* Footer styles */
 footer {
   padding: 1rem 0;
