@@ -8,6 +8,11 @@
 
 .tm-flex-column {
   flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.tm-flex-row {
+  flex-direction: row;
   flex-wrap: nowrap;
 }
 
@@ -23,6 +28,116 @@
   justify-content: space-between;
 }
 
+@media screen and (min-width: 360px) {
+  .tm-flex-xs {
+    display: flex;
+  }
+  .tm-flex-column-xs {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .tm-flex-row-xs {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .tm-flex-middle-xs {
+    align-items: center;
+  }
+  .tm-flex-center-xs {
+    justify-content: center;
+  }
+  .tm-flex-between-xs {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 480px) {
+  .tm-flex-s {
+    display: flex;
+  }
+  .tm-flex-column-s {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .tm-flex-row-s {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .tm-flex-middle-s {
+    align-items: center;
+  }
+  .tm-flex-center-s {
+    justify-content: center;
+  }
+  .tm-flex-between-s {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tm-flex-m {
+    display: flex;
+  }
+  .tm-flex-column-m {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .tm-flex-row-m {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .tm-flex-middle-m {
+    align-items: center;
+  }
+  .tm-flex-center-m {
+    justify-content: center;
+  }
+  .tm-flex-between-m {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tm-flex-l {
+    display: flex;
+  }
+  .tm-flex-column-l {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .tm-flex-row-l {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .tm-flex-middle-l {
+    align-items: center;
+  }
+  .tm-flex-center-l {
+    justify-content: center;
+  }
+  .tm-flex-between-l {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .tm-flex-xl {
+    display: flex;
+  }
+  .tm-flex-column-xl {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .tm-flex-row-xl {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .tm-flex-middle-xl {
+    align-items: center;
+  }
+  .tm-flex-center-xl {
+    justify-content: center;
+  }
+  .tm-flex-between-xl {
+    justify-content: space-between;
+  }
+}
 /* Custom grid system to organize all content inside the main tag */
 .tm-width-100 {
   width: 100%;
@@ -105,6 +220,54 @@ h1 {
   background-color: #fff;
 }
 
+.tm-hidden {
+  display: none;
+}
+
+.tm-visible {
+  display: initial;
+}
+
+@media screen and (min-width: 360px) {
+  .tm-hidden-xs {
+    display: none;
+  }
+  .tm-visible-xs {
+    display: initial;
+  }
+}
+@media screen and (min-width: 480px) {
+  .tm-hidden-s {
+    display: none;
+  }
+  .tm-visible-s {
+    display: initial;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tm-hidden-m {
+    display: none;
+  }
+  .tm-visible-m {
+    display: initial;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tm-hidden-l {
+    display: none;
+  }
+  .tm-visible-l {
+    display: initial;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .tm-hidden-xl {
+    display: none;
+  }
+  .tm-visible-xl {
+    display: initial;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -146,6 +309,10 @@ header {
   text-decoration: none;
 }
 
+.tm-menu-mobile-container img {
+  max-width: 40px;
+}
+
 /* Homepage style */
 .tm-page-section#home {
   max-width: 400px;
@@ -161,6 +328,7 @@ header {
 /* About me style */
 .tm-page-section#about-me .tm-image-container {
   position: relative;
+  margin-top: 1rem;
 }
 .tm-page-section#about-me .tm-image-container:before {
   content: "";
@@ -172,9 +340,19 @@ header {
   bottom: 22px;
   background-color: #4C5265;
 }
+@media screen and (min-width: 768px) {
+  .tm-page-section#about-me .tm-image-container {
+    margin-left: 3rem;
+  }
+}
 .tm-page-section#about-me img[src="./../img/profile.jpg"] {
-  max-width: 400px;
+  max-width: 200px;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .tm-page-section#about-me img[src="./../img/profile.jpg"] {
+    max-width: 300px;
+  }
 }
 
 /* Footer styles */

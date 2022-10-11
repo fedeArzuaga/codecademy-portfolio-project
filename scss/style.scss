@@ -3,6 +3,7 @@
 @import "./columns.scss";
 @import "./generics.scss";
 @import "./button.scss";
+@import "./visibility.scss";
 
 * {
     box-sizing: border-box;
@@ -52,6 +53,12 @@ header {
     }
 }
 
+.tm-menu-mobile-container {
+    img {
+        max-width: 40px;
+    }
+}
+
 /* Homepage style */
 .tm-page-section#home {
     max-width: 400px;
@@ -71,6 +78,7 @@ header {
 
     .tm-image-container {
         position: relative;
+        margin-top: 1rem;
 
         &:before {
             content: "";
@@ -82,11 +90,21 @@ header {
             bottom: calc(0px + 22px);
             background-color: $bg-lighter-color;
         }
+
+        @media screen and (min-width: $bk-medium) {
+            margin-left: 3rem;
+        }
+
     }
 
     img[src="./../img/profile.jpg"] {
-        max-width: 400px;
+        max-width: 200px;
         position: relative;
+
+        @media screen and (min-width: $bk-medium) {
+            max-width: 300px;
+        }
+
     }
 
 }

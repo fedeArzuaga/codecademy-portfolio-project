@@ -1,0 +1,52 @@
+.tm-hidden {
+    display: none;
+}
+
+.tm-visible {
+    display: initial;
+}
+
+@media screen and (min-width: $bk-xsmall) {
+    .tm-hidden-xs {
+        display: none;
+    }
+    .tm-visible-xs {
+        display: initial;
+    }
+}
+
+@media screen and (min-width: $bk-small) {
+    .tm-hidden-s {
+        display: none;
+    }
+    .tm-visible-s {
+        display: initial;
+    }
+}
+
+@media screen and (min-width: $bk-medium) {
+    .tm-hidden-m {
+        display: none;
+    }
+    .tm-visible-m {
+        display: initial;
+    }
+}
+
+@media screen and (min-width: $bk-large) {
+    .tm-hidden-l {
+        display: none;
+    }
+    .tm-visible-l {
+        display: initial;
+    }
+}
+
+@media screen and (min-width: $bk-xlarge) {
+    .tm-hidden-xl {
+        display: none;
+    }
+    .tm-visible-xl {
+        display: initial;
+    }
+}
