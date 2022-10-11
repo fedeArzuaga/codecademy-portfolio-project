@@ -197,10 +197,17 @@
   display: inline-block;
 }
 
-h1 {
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1, h2 {
   margin: 0;
-  margin-bottom: 1rem;
   font-family: "Noto Sans Mono", monospace;
+}
+
+h1 {
+  margin-bottom: 1rem;
   line-height: 1.2;
   font-size: 2.4rem;
 }
@@ -486,6 +493,58 @@ header {
   .tm-page-section#about-me img[src="./../img/profile.jpg"] {
     max-width: 300px;
   }
+}
+@media screen and (min-width: 768px) {
+  .tm-page-section#about-me img[src="./../img/profile.jpg"] {
+    max-width: 400px;
+  }
+}
+
+/* Career page */
+.tm-page-section#career .tm-career {
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .tm-page-section#career .tm-career {
+    margin-top: 0;
+    margin-left: auto;
+    padding-left: 4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tm-page-section#career .tm-career {
+    width: 600px;
+  }
+}
+.tm-page-section#career .tm-career ul {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  background-color: #4C5265;
+}
+@media screen and (min-width: 768px) {
+  .tm-page-section#career .tm-career ul {
+    max-height: 600px;
+    overflow-y: auto;
+  }
+}
+.tm-page-section#career .tm-career ul > li:not(:last-child) {
+  padding-bottom: 1.5rem;
+}
+.tm-page-section#career .tm-career ul > li + li {
+  border-top: 2px solid #fff;
+  padding-top: 1.5rem;
+}
+.tm-page-section#career .tm-career h2 {
+  margin: 0;
+}
+.tm-page-section#career .tm-career .tm-career-date {
+  margin: 10px 0;
+  margin-top: 0;
+  font-size: 0.6rem;
+}
+.tm-page-section#career .tm-career .tm-career-date + p {
+  font-size: 0.8rem;
 }
 
 /* Footer styles */

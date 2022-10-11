@@ -18,10 +18,17 @@
 
 }
 
-h1 {
+p:last-child {
+    margin-bottom: 0;
+}
+
+h1, h2 {
     margin: 0;
-    margin-bottom: 1rem;
     font-family: $noto-sans-mono;
+}
+
+h1 {
+    margin-bottom: 1rem;
     line-height: 1.2;
     font-size: 2.4rem;
 }

@@ -160,8 +160,67 @@ header {
             max-width: 300px;
         }
 
+        @media screen and (min-width: $bk-medium) {
+            max-width: 400px;
+        }
+
     }
 
+}
+
+/* Career page */
+.tm-page-section#career {
+    .tm-career {
+        margin-top: 2rem;
+
+        @media screen and (min-width: $bk-medium) {
+            margin-top: 0;
+            margin-left: auto;
+            padding-left: 4rem;
+        }
+
+        @media screen and (min-width: $bk-large) {
+            width: 600px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 1rem;
+            background-color: $bg-lighter-color;
+            
+            @media screen and (min-width: $bk-medium) {
+                max-height: 600px;
+                overflow-y: auto;
+            }
+
+            & > li:not(:last-child) {
+                padding-bottom: 1.5rem;
+            }
+
+            & > li + li {
+                border-top: 2px solid $white-color;
+                padding-top: 1.5rem;
+            }
+
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        .tm-career-date {
+            margin: 10px 0;
+            margin-top: 0;
+            font-size: 0.6rem;
+
+            & + p {
+                font-size: 0.8rem;
+            }
+
+        }
+
+    }
 }
 
 /* Footer styles */
