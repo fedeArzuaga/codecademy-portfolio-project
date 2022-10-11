@@ -1,0 +1,105 @@
+.tm-text-left {
+    text-align: left;
+}
+
+.tm-text-right {
+    text-align: right;
+}
+
+.tm-text-justify {
+    text-align: justify;
+}
+
+.tm-text-center {
+    text-align: center;
+}
+
+@media screen and (min-width: $bk-xsmall) {
+    .tm-text-left-xs {
+        text-align: left;
+    }
+    
+    .tm-text-right-xs {
+        text-align: right;
+    }
+    
+    .tm-text-justify-xs {
+        text-align: justify;
+    }
+    
+    .tm-text-center-xs {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: $bk-small) {
+    .tm-text-left-s {
+        text-align: left;
+    }
+    
+    .tm-text-right-s {
+        text-align: right;
+    }
+    
+    .tm-text-justify-s {
+        text-align: justify;
+    }
+    
+    .tm-text-center-s {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: $bk-medium) {
+    .tm-text-left-m {
+        text-align: left;
+    }
+    
+    .tm-text-right-m {
+        text-align: right;
+    }
+    
+    .tm-text-justify-m {
+        text-align: justify;
+    }
+    
+    .tm-text-center-m {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: $bk-large) {
+    .tm-text-left-l {
+        text-align: left;
+    }
+    
+    .tm-text-right-l {
+        text-align: right;
+    }
+    
+    .tm-text-justify-l {
+        text-align: justify;
+    }
+    
+    .tm-text-center-l {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: $bk-xlarge) {
+    .tm-text-left-xl {
+        text-align: left;
+    }
+    
+    .tm-text-right-xl {
+        text-align: right;
+    }
+    
+    .tm-text-justify-xl {
+        text-align: justify;
+    }
+    
+    .tm-text-center-xl {
+        text-align: center;
+    }
+}

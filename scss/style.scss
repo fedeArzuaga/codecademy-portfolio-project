@@ -4,6 +4,7 @@
 @import "./generics.scss";
 @import "./button.scss";
 @import "./visibility.scss";
+@import "./text.scss";
 
 * {
     box-sizing: border-box;
@@ -56,7 +57,55 @@ header {
 .tm-menu-mobile-container {
     img {
         max-width: 40px;
+        cursor: pointer;
     }
+}
+
+.tm-menu-mobile-canvas-container {
+    position: absolute;
+    width: 0vw;
+    left: 0;
+    transform: translateX(-70vw);
+    top: 0;
+    bottom: 0;
+    background: darken($bg-color, 10%);
+    padding: 2rem;
+    transition-property: width, transform;
+    transition-duration: .2s;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+
+        & > li + li {
+            margin-top: 1rem;
+        }
+
+        & > li > a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-family: $noto-sans-mono;
+            font-weight: 700;
+            display: inline-block;
+            padding: .5rem;
+        }
+
+    }
+
+    &.tm-menu-mobile-canvas-container-shown {
+        transform: translateX(0vw);
+        width: 70vw;
+    }
+
+    @media screen and (min-width: $bk-medium) {
+        &, &.tm-menu-mobile-canvas-container-shown {
+            transform: translateX(-70vw);
+            width: 0;
+        }
+    }
+
 }
 
 /* Homepage style */
@@ -69,7 +118,13 @@ header {
 
 .tm-buttons-container {
     & > a + a {
-        margin-left: 2rem;
+        margin-top: 1rem;
+
+        @media screen and (min-width: $bk-medium) {
+            margin-top: 0;
+            margin-left: 2rem;
+        }
+
     }
 }
 
